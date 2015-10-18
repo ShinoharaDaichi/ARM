@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\flash\demo.o"
+".\flash\isib_logo.o"
+".\flash\adc_mcb1700.o"
+".\flash\buttons_mcb1700.o"
+".\flash\glcd_fonts.o"
+".\flash\glcd_mcb1700.o"
+".\flash\joystick_mcb1700.o"
+".\flash\led_mcb1700.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib"
+".\flash\rtx_conf_cm.o"
+".\flash\ssp_lpc17xx.o"
+".\flash\gpdma_lpc17xx.o"
+".\flash\gpio_lpc17xx.o"
+".\flash\pin_lpc17xx.o"
+".\flash\startup_lpc17xx.o"
+".\flash\system_lpc17xx.o"
+--library_type=microlib --strict --scatter ".\Flash\Demo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\Demo.map" -o .\Flash\Demo.axf
